@@ -1,0 +1,36 @@
+Open source intelligence gathering tool (OSINT)
+---------------------------------------------
+How to install/Update
+sudo apt-get install recon-ng  (5.1.1-3)
+
+---------------------------------------------
+How to run
+Simply type in terminal
+$ recon-ng and press enter
+---------------------------------------------------
+Double tab gives us the various options
+back         db           help         keys         modules      pdb          shell        snapshots    workspaces   
+dashboard    exit         index        marketplace  options      script       show         spool  
+---------------------------------------------------
+Help
+[recon-ng][default] > help
+---------------------------------------------------
+Workspaces
+[recon-ng][default] > workspaces create recon
+[recon-ng][recon] > workspaces list
+
+  +----------------------------------+
+  | Workspaces |       Modified      |
+  +----------------------------------+
+  | default    | 2021-12-31 07:08:17 |
+  | recon      | 2021-12-31 07:09:25 |
+  +----------------------------------+
+  
+ How to navigate between workspaces
+ workspaces load default
+ workspaces load recon
+---------------------------------------------------
+
+
+
+
