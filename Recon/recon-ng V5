@@ -30,6 +30,33 @@ Workspaces
  workspaces load default
  workspaces load recon
 ---------------------------------------------------
+Modules
+We need to first install
+[recon-ng][default] > marketplace search whois
+                      Path                     | Version |     Status    |  Updated   | D | K |
+  +----------------------------------------------------------------------------------------------+
+  | recon/companies-domains/viewdns_reverse_whois | 1.1     | not installed | 2021-08-24 |   |   |
+  | recon/companies-multi/whois_miner             | 1.1     | not installed | 2019-10-15 |   |   |
+  | recon/domains-companies/whoxy_whois           | 1.1     | not installed | 2020-06-24 |   | * |
+  | recon/domains-contacts/whois_pocs             | 1.0     | not installed | 2019-06-24 |   |   |
+  | recon/netblocks-companies/whois_orgs          | 1.0     | not installed | 2019-06-24 |   |   
+ We will install whois_pocs
+ 
+ [recon-ng][default] > marketplace install recon/domains-contacts/whois_pocs
+[*] Module installed: recon/domains-contacts/whois_pocs
+[*] Reloading modules...
+Now, this module will show up in modules
+[recon-ng][default] > modules load recon/domains-contacts/whois_pocs
+-----------------------------------------------------
+Working with modules
+[recon-ng][default][brute_hosts] > info
+[recon-ng][default][brute_hosts] > options set SOURCE 10.10.11.104
+
+It has a preinstalled Wordlist
+WORDLIST  /home/kali/.recon-ng/data/hostnames.txt 
+[recon-ng][default][brute_hosts] > run
+
+
 
 
 
