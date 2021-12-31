@@ -1,0 +1,1 @@
+sudo gobuster -w /usr/share/wordlists/dirb/common.txt dir -u 10.10.11.104   
