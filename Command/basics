@@ -1,0 +1,5 @@
+sudo nmap -sC -sV -v <ip> \\-sV= Version detection, -sC= use of safe default script \\ -v= increase verbosity level (verbose means lot of words)
+ftp <ip> on connecting we can download files using get <file name>
+smbclient -L <ip> -> this will list the shares
+smbclient \\\\<ip>\\<share> -> access to share
+We can copy the file in our working location using get <filename>
